@@ -6,6 +6,9 @@ It will return the path of this lib in which there will be an assets folder with
 
 Add to your MacOS project in the `Run Scripts` the path of this file like:
 ```
-/bin/sh ~/launch_at_login/lib/assets/copy-login-helper.sh
+/bin/sh ~/.pub-cache/hosted/pub.dartlang.org/launch_at_login-0.0.2/lib/assets/copy-login-helper.sh
 ```
-
+Then you can run:
+```
+$ flutter run -d macos
+```

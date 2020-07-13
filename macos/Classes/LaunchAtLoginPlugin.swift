@@ -11,7 +11,6 @@ public class LaunchAtLoginPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    NSLog("%@",call.method);
     switch call.method {
     case "isEnabled":
         break;
@@ -32,7 +31,6 @@ public struct LaunchAtLogin {
 
     public static var isEnabled: Bool {
         get {
-            print(id);
             guard let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]]) else {
                 return false
             }
@@ -42,7 +40,6 @@ public struct LaunchAtLogin {
             return job?["OnDemand"] as? Bool ?? false
         }
         set {
-            print(id);
             SMLoginItemSetEnabled(id as CFString, newValue)
         }
     }
