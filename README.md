@@ -2,7 +2,7 @@
 
 After installing `launch_at_login` by adding to the pubspec.yaml and running `flutter pub get -v`
 
-It will return the path of this lib in which there will be an assets folder with a file called `copy-login-helper.sh`.
+It will return the path of this lib (something like: `~/.pub-cache/hosted/pub.dartlang.org/launch_at_login-0.0.2/lib/`) in which there will be an assets folder with a file called `copy-login-helper.sh`.
 
 Add to your MacOS project in the `Run Scripts`:
 ```
